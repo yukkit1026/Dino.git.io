@@ -12,7 +12,7 @@ class AnimateObstacle {
 
   moveObstacle() {
     this.x -= speed;
-    if (this.type == 1 && (this.x % (speed * 20) == 0 || this.x % ((speed / 3) * 20) == 0)) {
+    if (this.type == 1 && (score % 20) == 0) {
       this.animate = this.animate == 5 ? 6 : 5;
     }
   }

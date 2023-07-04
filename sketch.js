@@ -169,8 +169,8 @@ function animateObstacle() {
         dinoy < obsStack[i].y + obsStack[i].height - 15 &&
         dinoy + dinoHeight - 15 > obsStack[i].y 
         ){              
-        // noLoop()
-        // gameOverText();
+        noLoop()
+        gameOverText();
       }
     }
     obsStack[i].moveObstacle(); 

@@ -164,8 +164,8 @@ function animateObstacle() {
   for(let i = 0; i < obsStack.length; i++){
     for(let j = 0;j < obsStack[i].repeat;j++){
       image(imgStack[obsStack[i].animate], obsStack[i].x + (j*20), obsStack[i].y);      
-      if(dinox + dinoWidth - 15 > obsStack[i].x &&
-        dinox < obsStack[i].x + obsStack[i].width - 15 &&
+      if(dinox + dinoWidth - 15 > obsStack[i].x + (j*20) &&
+        dinox < obsStack[i].x + (j*20) + obsStack[i].width - 15 &&
         dinoy < obsStack[i].y + obsStack[i].height - 15 &&
         dinoy + dinoHeight - 15 > obsStack[i].y 
         ){              
